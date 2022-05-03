@@ -1,0 +1,11 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.time {
+    margin: 50px auto;
+    color: white;
+}

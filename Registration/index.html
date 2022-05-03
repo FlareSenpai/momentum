@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <h1 id="title">REGISTRASI</h1>
+    <form id="survey-form" method="post">
+        <label id="name-label" for="name">Nama</label>
+        <input type="text" name="name" id="name" placeholder="Masukkan nama kamu" required>
+        
+        <label id="email-label" for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Masukkan email kamu" required>
+        
+        <label>Apa jenis kelamin kamu?</label>
+        <select id="dropdown" name="role" required>
+            <option disabled selected value>Pilih jenis kelamin</option>
+            <option value="laki-laki">Laki-Laki</option>
+            <option value="wanita">Wanita</option>
+            <option value="femboy">Femboy</option>
+            <option value="transgender">Transgender</option>
+            <option value="secret">Tidak Ingin Memberi Tahu</option>
+        </select>
+
+        <label id="number-label" for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Masukkan password" required>
+
+        <label id="number-label" for="confirm-password">Konfirmasi Password</label>
+        <input type="password" name="confirm-password" id="confirm_password" placeholder="Konfirmasi password" required>
+
+
+        <div class="radio">
+            <p>Status kamu saat ini apa?</p>
+            <label class="radio-input"><input name="prefer" type="radio" class="radio-input" value="single">Belum Menikah</label>
+            <label class="radio-input"><input name="prefer" type="radio" class="radio-input" value="couple">Sudah Menikah</label>
+        </div>
+
+        <div class="checkbox">
+            <p>Pilih hobi kamu <span>(Boleh pilih lebih dari 1)</span></p>
+            <label><input name="prefer" type="checkbox" value="nonton-anime" class="checkbox-input">Nonton Anime</label>
+            <label><input name="prefer" type="checkbox" value="bikin-drama" class="checkbox-input">Bikin Drama</label>
+            <label><input name="prefer" type="checkbox" value="mangan" class="checkbox-input">Mangan</label>
+            <label><input name="prefer" type="checkbox" value="turu" class="checkbox-input">Turu</label>
+            <label><input name="prefer" type="checkbox" value="ngaloco" class="checkbox-input">Ngaloco</label>
+            <label><input name="lainnya" type="text"></label>
+        </div>
+
+        <p>Apakah kamu punya keluh kesah?</p>
+        <textarea id="comments" name="comment" placeholder="Masukkan keluh kesah kamu di sini..."></textarea>
+
+        <button type="submit" id="submit">SUBMIT</button>
+    </form>
+
+<script src="script.js"></script>
+</body>
+</html>
