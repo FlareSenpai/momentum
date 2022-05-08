@@ -5,6 +5,56 @@ body {
     height: 100%;
 }
 
+.container {
+    display: grid;
+    grid-template-areas: 'sidebar main cuaca';
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+    height: min-content;
+    margin: 5px;
+    gap: 5px;
+    padding: 4px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.sidebar span {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+.main {
+    
+}
+
 .time {
     color: white;
+}
+
+/* Hamburger Menu Animation */
+.burger-animation span:nth-child(1) {
+    transform-origin: 0 0;
+}
+
+.burger-animation span:nth-child(3) {
+    transform-origin: 0 100%;
+}
+
+.burger-animation span:nth-child(1) {
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.burger-animation span:nth-child(3) {
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.burger-animation span:nth-child(2) {
+    transform: scale(0);
 }

@@ -34,3 +34,10 @@ if(bgTime < 7 || bgTime >= 19) {
     good.innerHTML = 'Selamat sore, ';
     responsiveBody();
 }
+
+// Hamburger Menu
+var burger = document.querySelector('.sidebar');
+
+burger.addEventListener('click', function() {
+    burger.classList.toggle('burger-animation');
+});
