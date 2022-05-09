@@ -15,7 +15,7 @@ body {
     flex-direction: column;
     width: min-content;
     height: min-content;
-    margin: 5px;
+    margin: 10px;
     gap: 5px;
 }
 
@@ -27,10 +27,27 @@ body {
     transition: all 0.5s;
 }
 
-.main {
-    
-}
-
 .time {
     color: white;
+}
+
+/* Hamburger Menu Animation */
+.burger-animation span:nth-child(1) {
+    transform-origin: top left;
+}
+
+.burger-animation span:nth-child(3) {
+    transform-origin: 0 100%;
+}
+
+.burger-animation span:nth-child(1) {
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.burger-animation span:nth-child(3) {
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.burger-animation span:nth-child(2) {
+    transform: scale(0);
 }
