@@ -123,15 +123,15 @@ body {
 /* Responsive */
 @media screen and (max-width: 576px){
     .time {
-        font-size: 850%;
+        font-size: 800%;
     }
 
     .good {
-        font-size: 38px;
+        font-size: 42px;
     }
 
     .search {
-        width: 400px;
+        width: 310px;
         height: 30px;
     }
 }
