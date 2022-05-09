@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Heebo', sans-serif;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -8,7 +10,7 @@ body {
 .container {
     display: grid;
     grid-template-areas: 'sidebar main cuaca';
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
     justify-content: center;
     align-content: center;
 }
@@ -65,47 +67,44 @@ body {
     transform: scale(0);
 }
 
-/* Cuaca */
-/* .time {
-    justify-content: end;
-} */
-
 /* Main */
 .main {
-    text-align: center; 
-    display: grid;
-    justify-content: center;
-    grid-template-rows: 90px 75px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-template-rows: 90px 75px;
     max-width: 2fr;
+    position: relative;
+    text-align: center;
 }
 
 .time {
-    font-size: 84px;
+    font-size: 1050%;
     color: white;
+    margin-top: 200px;
+    margin-bottom: 5px;
+    padding: 0;
 }
 
 .good {
-    font-size: 72px;
+    font-size: 52px;
+    margin: 10px;
+    color: white;
 }
 
 .search {
     background-color: white;    
-    max-width: 530px;
-    max-height: 60px;
-    display: grid;
-    grid-template-columns: auto 530px;
+    width: 550px;
+    display: flex;
     padding: 8px;
     border-radius: 365px;
-    align-content: space-around;
 }
 
 .search input {
-    padding: 0;
-    box-sizing: border-box;
     padding: 0.375rem 0.75rem;
     border-style: none;
     outline: none;
-    width: 85%; 
+    width: 85%;
     font-size: inherit;
 }
 
@@ -119,4 +118,20 @@ body {
 .cuaca {
     display: grid;
     justify-content: end;
+}
+
+/* Responsive */
+@media screen and (max-width: 576px){
+    .time {
+        font-size: 850%;
+    }
+
+    .good {
+        font-size: 38px;
+    }
+
+    .search {
+        width: 400px;
+        height: 30px;
+    }
 }

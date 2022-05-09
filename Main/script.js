@@ -19,7 +19,7 @@ function responsiveBody() {
 
 if(bgTime < 7 || bgTime >= 19) {
     document.body.style.backgroundImage = 'url(img/malam.jpg)';
-    good.innerHTML = 'Selamat malam, ';
+    good.innerHTML = 'Selamat malam, Taufiq.';
     responsiveBody();
 }else if(bgTime <= 15) {
     document.body.style.backgroundImage = 'url(img/siang.jpg)';
