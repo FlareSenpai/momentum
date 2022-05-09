@@ -10,44 +10,54 @@ body {
     grid-template-areas: 'sidebar main cuaca';
 }
 
+/* Hamburger Menu */
 .sidebar {
     display: flex;
     flex-direction: column;
-    width: min-content;
-    height: min-content;
-    margin: 10px;
-    gap: 5px;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+    margin: 8px;
+}
+
+.sidebar input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -10px;
+    top: -6px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
 }
 
 .sidebar span {
-    width: 30px;
-    height: 4px;
+    display: block;
+    width: 28px;
+    height: 3px;
     background-color: white;
     border-radius: 3px;
     transition: all 0.5s;
 }
 
-.time {
-    color: white;
-}
 
 /* Hamburger Menu Animation */
-.burger-animation span:nth-child(1) {
-    transform-origin: top left;
+.sidebar span:nth-child(2) {
+    transform-origin: 0 0;
 }
 
-.burger-animation span:nth-child(3) {
+.sidebar span:nth-child(4) {
     transform-origin: 0 100%;
 }
 
-.burger-animation span:nth-child(1) {
+.sidebar input:checked ~ span:nth-child(2) {
     transform: rotate(45deg) translate(-1px, -1px);
 }
 
-.burger-animation span:nth-child(3) {
+.sidebar input:checked ~ span:nth-child(4) {
     transform: rotate(-45deg) translate(-1px, 0);
 }
 
-.burger-animation span:nth-child(2) {
+.sidebar input:checked ~ span:nth-child(3) {
     transform: scale(0);
 }
